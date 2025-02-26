@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakerStore - Магазин кроссовок</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SneakerStore</div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="cart">
+                <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png" alt="Корзина">
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Найди свою идеальную пару</h1>
+            <p>Лучшие кроссовки от мировых брендов</p>
+        </section>
+
+        <section class="products" id="catalog">
+            <h2>Популярные модели</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="nike">Nike</button>
+                <button class="filter-btn" data-filter="adidas">Adidas</button>
+                <button class="filter-btn" data-filter="puma">Puma</button>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-brand="nike">
+                    <div class="product-image">
+                        <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/99486859-0ff3-46b4-949b-2d16af2ad421/custom-nike-dunk-high-by-you-shoes.png" alt="Nike Dunk">
+                        <div class="quick-view">Быстрый просмотр</div>
+                    </div>
+                    <h3>Nike Dunk High</h3>
+                    <p class="price">12 999 ₽</p>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+                <div class="product-card" data-brand="adidas">
+                    <div class="product-image">
+                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/09c5ea6df1bd4be6baaaac5e003e7047_9366/Forum_Low_Shoes_White_FY7756_01_standard.jpg" alt="Adidas Forum">
+                        <div class="quick-view">Быстрый просмотр</div>
+                    </div>
+                    <h3>Adidas Forum Low</h3>
+                    <p class="price">11 499 ₽</p>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+                <div class="product-card" data-brand="puma">
+                    <div class="product-image">
+                        <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1350,h_1350/global/374915/01/sv01/fnd/IND/fmt/png/Slipstream-Lo-Sneakers" alt="Puma Slipstream">
+                        <div class="quick-view">Быстрый просмотр</div>
+                    </div>
+                    <h3>Puma Slipstream</h3>
+                    <p class="price">9 999 ₽</p>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+                <div class="product-card" data-brand="nike">
+                    <div class="product-image">
+                        <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/5ef46213-8c0f-4384-9e7d-85be865d22c3/air-force-1-07-shoes-WrLlWX.png" alt="Nike Air Force 1">
+                        <div class="quick-view">Быстрый просмотр</div>
+                    </div>
+                    <h3>Nike Air Force 1</h3>
+                    <p class="price">10 999 ₽</p>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+                <div class="product-card" data-brand="adidas">
+                    <div class="product-image">
+                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/69721f2e7c934d909168a80e00818569_9366/Stan_Smith_Shoes_White_B27136_01_standard.jpg" alt="Adidas Stan Smith">
+                        <div class="quick-view">Быстрый просмотр</div>
+                    </div>
+                    <h3>Adidas Stan Smith</h3>
+                    <p class="price">8 999 ₽</p>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+                <div class="product-card" data-brand="puma">
+                    <div class="product-image">
+                        <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1350,h_1350/global/385629/02/sv01/fnd/IND/fmt/png/Suede-Classic-XXI-Sneakers" alt="Puma Suede">
+                        <div class="quick-view">Быстрый просмотр</div>
+                    </div>
+                    <h3>Puma Suede Classic</h3>
+                    <p class="price">7 999 ₽</p>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>О компании</h4>
+                <p>Мы предлагаем лучший выбор кроссовок по доступным ценам</p>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p>Email: info@sneakerstore.ru</p>
+                <p>Телефон: +7 (999) 123-45-67</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
